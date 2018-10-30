@@ -106,7 +106,7 @@ CREATE TABLE `escala_igreja` (
 --
 
 INSERT INTO `escala_igreja` (`segunda_manha1`, `segunda_manha2`, `segunda_noite1`, `segunda_noite2`, `terca_manha1`, `terca_manha2`, `terca_noite1`, `terca_noite2`, `quarta_manha1`, `quarta_manha2`, `quarta_noite1`, `quarta_noite2`, `quinta_manha1`, `quinta_manha2`, `quinta_noite1`, `quinta_noite2`, `sexta_manha1`, `sexta_manha2`, `sexta_noite1`, `sexta_noite2`, `sabado_manha1`, `sabado_manha2`, `sabado_noite1`, `sabado_noite2`, `sabado_noite3`, `sabado_noite4`, `domingo_manhaA1`, `domingo_manhaA2`, `domingo_manhaA3`, `domingo_manhaA4`, `domingo_manhaB1`, `domingo_manhaB2`, `domingo_manhaB3`, `domingo_manhaB4`, `domingo_tarde1`, `domingo_tarde2`, `domingo_tarde3`, `domingo_tarde4`, `domingo_noite1`, `domingo_noite2`, `domingo_noite3`, `domingo_noite4`, `domingo_capela1`, `domingo_capela2`, `domingo_capela3`, `domingo_capela4`, `mes`, `id`) VALUES
-('', '', '', '', 'admin', '', '', '', '', 'JosÃ© Lucas Rodrigues Santos', '', '', 'admin', 'JosÃ© Lucas Rodrigues Santos', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'JosÃ© Lucas Rodrigues Santos', '', '', '', '', '', '', '', '', 'JosÃ© Lucas Rodrigues Santos', 'JosÃ© Lucas Rodrigues Santos', '', '10', 1);
+('', '', '', '', 'admin', '', '', '', '', 'José Lucas Rodrigues Santos', '', '', 'admin', 'JosÃ© Lucas Rodrigues Santos', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'JosÃ© Lucas Rodrigues Santos', '', '', '', '', '', '', '', '', 'JosÃ© Lucas Rodrigues Santos', 'JosÃ© Lucas Rodrigues Santos', '', '10', 1);
 
 -- --------------------------------------------------------
 
@@ -134,7 +134,7 @@ INSERT INTO `inscrever` (`id`, `usuario`, `cpf`, `presenca`, `senha`, `email`, `
 (5, 'admin', '000', 2, '0192023a7bbd73250516f069df18b500', 'admin@email.com', 0, 0),
 (7, 'joao vitor', '053.155.456-45', 0, 'e10adc3949ba59abbe56e057f20f883e', 'jvbrito12@hotmail.com', 0, 0),
 (8, 'josecarlos.almeida', '358.450.901-71', 0, 'e10adc3949ba59abbe56e057f20f883e', 'carlinhosalma@gmail.com', 0, 0),
-(9, 'JosÃ© Lucas Rodrigues Santos', '059.836.281-94', 2, 'e8d95a51f3af4a3b134bf6bb680a213a', 'joselucasrs@gmail.com', 0, 0);
+(9, 'José Lucas Rodrigues Santos', '059.836.281-94', 2, 'e8d95a51f3af4a3b134bf6bb680a213a', 'joselucasrs@gmail.com', 0, 0);
 
 --
 -- Indexes for dumped tables
