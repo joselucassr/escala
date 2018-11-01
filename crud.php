@@ -1,23 +1,18 @@
 <?php 
 	session_start();
 	include('connect.php');
-
-
-
 	if(@$_GET['ok_cadastro']||@$_POST['ok_cadastro']){
-
-
-	@$id=$_POST['id']?@$_POST['id']:@$_GET['id'];
-	@$sub=$_GET['Increver-se'];
-	@$pre=$_GET['presenca'];
-	@$usu = @$_POST['usuario'];
-	$del=@$_GET['deletar'];
-	$erase=@$_GET['apagar'];
-	$ativar=@$_GET['ativar'];
-	@$senha = md5(@$_POST['senha']);
-	@$conf_senha = @$_POST['conf_senha'];
-	@$email = @$_POST['email'];
-	@$cpf = @$_POST['cpf'];
+        @$id=$_POST['id']?@$_POST['id']:@$_GET['id'];
+        @$sub=$_GET['Inscrever-se'];
+        @$pre=$_GET['presenca'];
+        @$usu = @$_POST['usuario'];
+        $del=@$_GET['deletar'];
+        $erase=@$_GET['apagar'];
+        $ativar=@$_GET['ativar'];
+        @$senha = md5(@$_POST['senha']);
+        @$conf_senha = @$_POST['conf_senha'];
+        @$email = @$_POST['email'];
+        @$cpf = @$_POST['cpf'];
 	
 
 	

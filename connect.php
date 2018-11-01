@@ -3,16 +3,12 @@
 	$database = "escala";
 	$username = "root";
 	$password = "";
-	// Create connection
+	// Criar conexão com o banco
 	$conn = mysqli_connect($servername, $username, $password, $database);
-	// Check connection
+	// Checar a conexão
 	if (!$conn) {
 	    die("Connection failed: " . mysqli_connect_error());
 	}
 	//echo "Connected successfully";
-	
-
-
-
 
  ?>
