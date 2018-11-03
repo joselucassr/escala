@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="edea0d6a-9d8c-41cd-9fca-9942a27b474b" name="Apache do XAMPP" url="http://localhost/escala">
+        <fileTransfer port="0" mountedRoot="C:\xampp\htdocs\escala" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>
