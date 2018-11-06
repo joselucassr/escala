@@ -3,7 +3,7 @@
 	@$id=$_GET['id'];
 
 	if($id){
-		$sql= "SELECT * FROM inscrever WHERE id=$id ";
+		$sql= "SELECT * FROM usuarios WHERE id=$id ";
 	
 		$result= mysqli_query($conn,$sql);
 		$row =  mysqli_fetch_assoc($result);

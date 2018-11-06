@@ -4,7 +4,7 @@
 	$id=@$_GET['id'];
 
 	if($id){
-	echo $sql= "SELECT * FROM inscrever WHERE id=$id AND voluntario !=0 ";
+	echo $sql= "SELECT * FROM usuarios WHERE id=$id AND voluntario !=0 ";
 	$result = mysqli_query($conn,$sql);
 	$row =  mysqli_fetch_assoc($result);
 

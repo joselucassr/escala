@@ -2,7 +2,7 @@
 
 
 
-	$sql= "SELECT  * FROM inscrever ";
+	$sql= "SELECT  * FROM usuarios ";
 	$sql2="SELECT (DATE_FORMAT(now(), '%m'),";
 	$result = mysqli_query($conn,$sql);
 

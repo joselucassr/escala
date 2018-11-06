@@ -2,7 +2,7 @@
 
 
 
-	$sql= "SELECT * FROM inscrever ";
+	$sql= "SELECT * FROM usuarios ";
 	$result = mysqli_query($conn,$sql);
 	$row =  mysqli_fetch_assoc($result);
 	 if(@$alerta){echo "<script>confirmacao('success')</script>";}

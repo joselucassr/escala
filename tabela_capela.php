@@ -10,7 +10,7 @@
 	$domingo_capela3 =@$row['domingo_capela3']?"<a href='crud.php?ok_escala=true&domingo_capela3=false'>".$row['domingo_capela3']."</a>":"<a href='crud.php?ok_escala=true&domingo_capela3=true'>Inscrever-se</a>";
 	$domingo_capela4 =@$row['domingo_capela4']?"<a href='crud.php?ok_escala=true&domingo_capela4=false'>".$row['domingo_capela4']."</a>":"<a href='crud.php?ok_escala=true&domingo_capela4=true'>Inscrever-se</a>";
 		
-	 $sql= "SELECT presenca FROM inscrever WHERE presenca != '2' AND cpf='".@$_SESSION['cpf']."' ";
+	 $sql= "SELECT presenca FROM usuarios WHERE presenca != '2' AND cpf='".@$_SESSION['cpf']."' ";
 	$result1 = mysqli_query($conn,$sql);
 	$row1 =  mysqli_fetch_assoc($result1);
 	

@@ -20,27 +20,27 @@
 
 			if($del){
 				echo "tem id e vai deletar";
-					$sql= "DELETE FROM `inscrever` WHERE id=$id";
+					$sql= "DELETE FROM `usuarios` WHERE id=$id";
 					 mysqli_query($conn,$sql);
 				@$redirect="./?pag=4";
 				
 			}
 			if($erase){
 					echo "tem id e vai apagar";
-				 $sql = "UPDATE `inscrever` set valor='1' WHERE id=$id";
+				 $sql = "UPDATE `usuarios` set valor='1' WHERE id=$id";
 
 				 mysqli_query($conn,$sql);
 				$redirect = "./?pag=4";
 			}else{
 				if($ativar){
 			echo "tem id e vai ativar";
-			$sql =  "UPDATE `inscrever` SET valor='0' WHERE id=$id";
+			$sql =  "UPDATE `usuarios` SET valor='0' WHERE id=$id";
 			 mysqli_query($conn,$sql);
 			$redirect = "./?pag=4";
 				}else{
 			
 					echo "tem id e vai atualizar ";
-					$sql =	"UPDATE `inscrever` SET usuario = '$usu', senha = '$senha', email = '$email', cpf = '$cpf' WHERE id = $id";
+					$sql =	"UPDATE `usuarios` SET usuario = '$usu', senha = '$senha', email = '$email', cpf = '$cpf' WHERE id = $id";
 		 			$redirect = "./?pag=2";
 		}
 
@@ -51,7 +51,7 @@
 
 			echo "nao tem id e vai cadastrar";
 			//exit;
-		 $sql= "INSERT INTO `inscrever` (`usuario`,`senha`,`email`,`cpf`) VALUES ('$usu','$senha','$email','$cpf')"; 
+		 $sql= "INSERT INTO `usuarios` (`usuario`,`senha`,`email`,`cpf`) VALUES ('$usu','$senha','$email','$cpf')"; 
 		 mysqli_query($conn,$sql);
 		 @$redirect="./?pag=3";
 
@@ -71,7 +71,7 @@
 			$cond="AND senha='$senha'";
 		}
 		
-		 $sql = "SELECT * FROM inscrever WHERE email='$email' $cond AND valor = '0'";
+		 $sql = "SELECT * FROM usuarios WHERE email='$email' $cond AND valor = '0'";
 		 
 		$result = mysqli_query($conn ,$sql);
 		$row = mysqli_fetch_assoc($result);
@@ -111,7 +111,7 @@
 				$mes=$row['mes'];
 			 $data = date("m");
 			 $mes;
-			$sql="UPDATE `inscrever` SET `mes` = '$data'";
+			$sql="UPDATE `usuarios` SET `mes` = '$data'";
 		 $redirect = "./?pag=1";
 		
 		$segunda_manha1= @$_GET['segunda_manha1'];
@@ -254,7 +254,7 @@
 		
 		if($id){
 
-			$sql =	"UPDATE `inscrever` SET `usuario` = '$usu' WHERE `id` = '$id'";
+			$sql =	"UPDATE `usuarios` SET `usuario` = '$usu' WHERE `id` = '$id'";
 			 $redirect = "../?pag=1";
 		}
 		if($data!=$mes){
@@ -276,7 +276,7 @@
 					$sql="INSERT INTO `escala_igreja` (mes,$key) VALUES (DATE_FORMAT(now(), '%m'),'".$_SESSION['USU']."') ";
 				$result = mysqli_query($conn ,$sql);
 
-					$sql2="UPDATE `inscrever` SET presenca=0";
+					$sql2="UPDATE `usuarios` SET presenca=0";
 				$result2 = mysqli_query($conn ,$sql2);
 				 $redirect = "../?pag=1";
   				}	
@@ -300,14 +300,14 @@
 		
 		if($presenca=='true'){
 
-		 $sql =	"UPDATE `inscrever` SET `presenca`='2' WHERE id = '$id'";
+		 $sql =	"UPDATE `usuarios` SET `presenca`='2' WHERE id = '$id'";
 			
 			$result = mysqli_query($conn ,$sql);
 			$row = mysqli_fetch_assoc($result);
 			@$redirect = "./?pag=7";
 		}else{
 
-			 $sql =	"UPDATE `inscrever` SET `presenca`='0' WHERE id = '$id'";
+			 $sql =	"UPDATE `usuarios` SET `presenca`='0' WHERE id = '$id'";
 			
 			$result = mysqli_query($conn ,$sql);
 			$row = mysqli_fetch_assoc($result);
