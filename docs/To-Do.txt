@@ -15,6 +15,9 @@
 	
 	- Doações/Contribuições (API PayPal, etc...);
 	
+//FROM: CHRIS 
+//TO: JOÃO
+	
 - Limpar usuarios do banco;
 
 - Dividir o banco da escala em 3 tabelas (se possivel):
