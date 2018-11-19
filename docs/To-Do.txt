@@ -1,24 +1,27 @@
-- Fazer um iframe na aba da Liturgia Di·ria (para a p·gina da Paulus/CNBB);
+- Fazer um iframe na aba da Liturgia Di√°ria (para a p√°gina da Paulus/CNBB);
 
-- Linkar com a p·gina inicial do Gabriel;
+- Linkar com a p√°gina inicial do Gabriel;
 - Estudar aonde implementar o Laravel;
 
-- Colocar a m·scara nos cadastros (Javascript e JQuery);
-
+- Colocar a m√°scara nos cadastros (Javascript e JQuery);
 
 - Arrumar a dash (colocar os links restantes, colorir);
 
-	- Sistema de Avisos/NotificaÁıes;
+	- Sistema de Avisos/Notifica√ß√µes;
 	
-	- Contatos (estudar soluÁ„o para os tickets de suporte);
+	- Contatos (estudar solu√ß√£o para os tickets de suporte);
 	
-	- Liturgia Di·ria;
+	- Liturgia Di√°ria;
 	
-	- DoaÁıes/ContribuiÁıes (API PayPal, etc...);
+	- Doa√ß√µes/Contribui√ß√µes (API PayPal, etc...);
 	
--Limpar usuarios do banco;
--Dividir o banco da escala em 3 tabelas se possivel;
-	-Segunda a sab manh„;
-	-Segunda a sex Noite;
-	-Sabado e Domingo Noite;
--COMENTAR TUDO;
+- Limpar usuarios do banco;
+
+- Dividir o banco da escala em 3 tabelas (se possivel):
+	-Segunda a s√°bado de manh√£;
+	-Segunda a sexta de noite;
+	-Sabado a noite e domingo;
+	
+- Tirar o sistema de virar o m√™s (ser√° apenas uma row por table - ou seja, um √∫nico m√™s armazenado no banco);
+	
+- COMENTAR TUDO;
