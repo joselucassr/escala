@@ -1,10 +1,24 @@
 - Fazer um iframe na aba da Liturgia Diária (para a página da Paulus/CNBB);
+
 - Linkar com a página inicial do Gabriel;
 - Estudar aonde implementar o Laravel;
+
 - Colocar a máscara nos cadastros (Javascript e JQuery);
 
+
 - Arrumar a dash (colocar os links restantes, colorir);
+
 	- Sistema de Avisos/Notificações;
+	
 	- Contatos (estudar solução para os tickets de suporte);
+	
 	- Liturgia Diária;
+	
 	- Doações/Contribuições (API PayPal, etc...);
+	
+-Limpar usuarios do banco;
+-Dividir o banco da escala em 3 tabelas se possivel;
+	-Segunda a sab manhã;
+	-Segunda a sex Noite;
+	-Sabado e Domingo Noite;
+-COMENTAR TUDO;
