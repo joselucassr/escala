@@ -105,7 +105,7 @@
 
 		
 		<div class="container-fluid ">
-	 <?php  echo	$tabela = "<table class='table' >
+	 <?php  echo	$tabela = "<table class='table table-hover' >
 			
 		  		
 		    	

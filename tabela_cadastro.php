@@ -8,7 +8,7 @@
 	 if(@$alerta){echo "<script>confirmacao('success')</script>";}
 $i=0;
 
-  $table= "<table border='1' class='table table-striped table-dark'>
+  $table= "<table border='1' class='table table-striped table-ligth table-hover'>
 	<tr>
 		<th>#</th>
 		<th>id</th>

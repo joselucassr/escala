@@ -30,7 +30,7 @@
 	<h3 align='center'>CAPELA SÃO JOSÉ OPERÁRIO</h3>
 		<div class='container-fluid '>
 
-	<table class='table'align='center'>
+	<table class='table table-hover'align='center'>
 			 
 		    	
 		    	<thead class='thead-dark'>

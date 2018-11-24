@@ -1,3 +1,11 @@
+<script type="text/javascript">
+    function Msg(){
+        alert("Você deslogou da sua conta!");
+    }
+
+
+</script>
+
 <?php
     //Inicia a sessão do usuário para armazenar os dados dele
 	session_start();	
@@ -9,9 +17,10 @@
     $hoje= date('Y-m-d');
 
 	// $pag=@$_GET['pag']?$_GET['pag']:""; //DEBUGGER, TALVEZ, SLA?
- 	echo $login =@$_SESSION['JVB']?
-        "<a href='?pag=5'><button  class='btn btn-ligth btn-md' >SAIR</button></a>":
-        "<a href='./?pag=3'><button  class='btn btn-ligth btn-md'>LOGIN</button></a>";
+    if(@$_SESSION['JVB']){
+        echo "<a href='?pag=5'><button onclick='Msg();' class='btn btn-ligth btn-md' >SAIR</button></a>";
+    }
+
 
  ?>
 
@@ -88,12 +97,9 @@
                     echo utf8_encode("BEM-VINDO(A): " . @$_SESSION['USU']);
                 } ?></b>
         </div>
-        <?php if ((@$pag != 2) && (@$pag != 3)) {
-
-            if (@$_SESSION['MASTER'] == 'true') { ?>
-
-
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <?php if ((@$pag != 2) && (@$pag != 3)) { ?>
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -102,8 +108,11 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
 
+            <a class="navbar-brand" href="?pag=1">Escala</a>
+                <a class="navbar-brand" href="?pag=6" >Escala capela</a>
 
-                <a class="navbar-brand" href="?pag=1">Escala</a>
+           <?php  if (@$_SESSION['MASTER'] == 'true') { ?>
+                
                 <a class="navbar-brand" href="?pag=4">Tabela dos usuarios</a>
                 <a class="navbar-brand" href="?pag=7">Chamada</a>
 

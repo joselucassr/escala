@@ -93,8 +93,12 @@
 			$redirect = "./?pag=1";
 			$_SESSION['MASTER']= "";
 			}
-		}else{
-			echo "errooooooou";
+		}else{//LOGIN FAIL
+			$_SESSION['log'] = "<div class='alert alert-danger col-8 mx-auto' style='margin-top:1%;' role='alert'>
+				<h4 class='alert-heading text-center'>Algo deu errado! :(</h4><h6 class='text-center'>E-mail ou senha incorretos.</h6></div>";
+			$redirect = "./?pag=3";
+
+			
 
 		}
 
@@ -283,9 +287,6 @@
 			}
 		
 		}
-
-
-
 
 
 	}//fim do ok_usuario

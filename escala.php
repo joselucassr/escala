@@ -28,8 +28,7 @@
 	
 </head>
 <body>
-	<a href="./?pag=1&opcao=1"><button class='btn btn-ligth btn-md'>CAPELA SÃO JOSÉ OPERÁRIO</button></a>
-	<a href="./?pag=1"><button class='btn btn-ligth btn-md'>IGREJA SÃO FRANCISCO DE ASSIS-MATRIZ</button></a>
+	
 <?php switch ($opcao) {
 	case '1': include('tabela_capela.php');break;
 	
